@@ -11,32 +11,34 @@
   <main>
     <div class="brand">TSApps</div>
     <h1>Privacy Policy</h1>
-    <p>Effective September 22, 2026</p>
-    <p>This policy explains how Alarms, an alarm app for iPhone published by TSApps, handles your information. The short version: your alarms and your morning log stay on your iPhone, and the only thing that leaves it is anonymous usage statistics you can switch off.</p>
+    <p>Effective October 6, 2026</p>
+    <p>This policy explains how Alarms, an iPhone alarm app published by TSApps, handles information. Your alarm plans, registered QR payloads and morning log are stored on your device. Usage analytics is enabled by default and sends technical data to AppMetrica; you can turn it off in the app's Settings.</p>
 
     <h2>What Alarms collects</h2>
-    <p>One thing: anonymous usage statistics, so we can see which parts of the app people use and where it gets in the way. Alarms has no account and no advertising, and it does not track you across other apps or websites. Everything you create in the app stays on your iPhone.</p>
+    <p>We use AppMetrica, operated by Yandex, to understand app usage and improve Alarms. The app reports events such as creating or ringing an alarm, starting or completing a mission, using the emergency exit, viewing the paywall, purchasing or restoring Premium, and changing the wake-up check setting. Event parameters include mission type, difficulty, attempt count, product identifier and setting state.</p>
+    <p>The SDK also processes session and technical information, including app and SDK versions, device model, operating system, language, technical device identifiers such as an AppMetrica-generated identifier and the identifier for vendor (IDFV), and the IP address used to connect. An approximate region can be derived from the IP address. This information is not fully anonymous: identifiers can distinguish an installation or device over time. Alarms has no account or advertising and does not use the advertising identifier (IDFA) or an advertising support module.</p>
+    <p>AppMetrica's automatic purchase tracking is enabled in the SDK configuration. When the SDK receives purchase information from StoreKit, it can send purchase and subscription metadata, such as product and transaction identifiers, price, currency and receipt information. The app also reports the product identifier when a purchase completes. Apple processes payments; Alarms does not receive your payment card details or Apple Account credentials.</p>
+    <p>Alarm times and labels, registered QR payloads, the contents of your morning log, camera images and motion readings are not included in the app's analytics events. Alarms does not request location permission or supply a location to AppMetrica, so it does not enable GPS collection through a location permission request.</p>
 
-    <h2>Usage statistics</h2>
-    <p>The statistics are collected with AppMetrica, a mobile analytics service operated by Yandex, which processes them on our behalf. Each report carries the name of something that happened in the app — an alarm was created, a mission was started or finished, the fallback ended an alarm, the paywall was shown, a subscription was bought — together with the app version, the device model, the iOS version, an identifier AppMetrica generates for this app on this device, and the IP address the request arrives with, from which a rough region is derived.</p>
-    <p>What is never sent: your alarm times and labels, the text of a QR code you registered, your morning log, and anything else you type. The identifier is not your Apple Account and is not linked to your name, and we never receive a way to contact you.</p>
-    <p>You can switch the statistics off: open Alarms, go to Settings and turn off <strong>Share usage data</strong> under Analytics. Nothing is sent after that. Yandex describes how it processes the data in its <a href="https://yandex.com/legal/confidential/">privacy policy</a>.</p>
+    <h2>Your analytics choice</h2>
+    <p><strong>Share usage data is on by default.</strong> There is no separate consent prompt before analytics starts. To stop SDK data sending, open Alarms, go to Settings and turn off <strong>Share usage data</strong> under Analytics. The app saves this preference and does not activate analytics on subsequent launches while it is off. Turning it off does not delete data already sent to the provider; it is not a request to erase that data or the SDK's local cache.</p>
+    <p>AppMetrica processes analytics data on our behalf. Its documentation states that data may be stored and processed in the European Union and the Russian Federation. See <a href="https://appmetrica.yandex.com/docs/en/new-users/data-security">AppMetrica's data security information</a> and <a href="https://yandex.com/legal/confidential/">Yandex's privacy policy</a> for provider practices. For privacy questions or a data request, contact us below. Because Alarms has no user account, identifying a particular analytics record may require additional information.</p>
 
-    <h2>What is stored on your device</h2>
-    <p>Your alarms (time, repeat days, label, sound, missions and the text of a QR code you register), your morning log (when an alarm rang, when you finished and which mission you did) and your settings are stored only on your iPhone, inside Alarms. The widget reads your next alarm from storage shared with the app on the same device. Deleting Alarms deletes all of it. If you back up your iPhone, Apple's backup includes this data the way it includes any app's; we cannot see it.</p>
+    <h2>Information stored on your device</h2>
+    <p>Your alarm plans (time, repeat days, label, sound, missions and registered QR payload), morning log (alarm and completion times, mission and outcome) and settings are stored in Alarms on your iPhone. The widget reads the next alarm from storage shared with the app on the same device. Apple device backups may include app data. We do not operate a server that stores or synchronizes these alarm plans or logs.</p>
 
     <h2>Purchases and subscriptions</h2>
-    <p>Alarms Premium is sold through the App Store. Apple processes the payment; we never see your payment details or your Apple Account. The app only asks the App Store whether your subscription is active.</p>
+    <p>Premium is sold through the App Store. Alarms uses StoreKit to load products, make purchases, restore purchases and check subscription entitlements. Apple handles the payment and subscription account. The analytics purchase metadata described above is separate from payment processing.</p>
 
     <h2>Permissions</h2>
-    <p>Alarms asks for a permission only when a feature needs it, and you can change each answer in the Settings app:</p>
-    <p><strong>Alarms</strong> let Alarms ring as a system alarm through Silent mode and Focus with the app closed.</p>
-    <p><strong>Motion &amp; Fitness</strong> is used while a shake or steps mission runs, to count shakes and steps on the iPhone. The readings are not stored.</p>
-    <p><strong>Camera</strong> is used to scan the QR code you register and, during the QR mission, to scan it again. No image is saved or sent.</p>
-    <p><strong>Notifications</strong> are used only for the wake-up check, a reminder five minutes after a mission, if you switch it on.</p>
+    <p>You can change permissions in the iPhone Settings app.</p>
+    <p><strong>Alarms</strong> allows system alarms to ring through Silent mode and Focus with the app closed.</p>
+    <p><strong>Motion &amp; Fitness</strong> supports movement missions. Motion and step readings are used for the mission and are not sent as analytics events.</p>
+    <p><strong>Camera</strong> is used to register and scan a QR code. The app does not save or send camera images.</p>
+    <p><strong>Notifications</strong> supports the optional wake-up check, a reminder five minutes after a mission.</p>
 
     <h2>Children</h2>
-    <p>Alarms is not directed at children under 13, and it collects no information from anyone, children included.</p>
+    <p>Alarms is not directed at children under 13. It does not ask for a user's age, so we cannot determine the age of every user. Analytics can process the technical and usage data described above whenever it is enabled, including on a device used by a child. A parent or guardian can disable Share usage data in Settings and contact us with privacy questions.</p>
 
     <h2>Changes to this policy</h2>
     <p>If this policy changes, the new version is posted on this page with a new effective date.</p>
